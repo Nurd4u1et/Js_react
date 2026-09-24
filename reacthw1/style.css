@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 16px;
+  background: #f7f7f9;
+  color: #222;
+}
+
+h1 { font-size: 1.4rem; }
+h2 { font-size: 1.1rem; margin-top: 0; }
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+}
+
+.task-card .info { font-size: 0.9rem; }
+
+.status {
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.status.idle { background: #eee; color: #555; }
+.status.running { background: #fff3cd; color: #856404; }
+.status.completed { background: #d4edda; color: #155724; }
+.status.failed { background: #f8d7da; color: #721c24; }
+
+button {
+  cursor: pointer;
+  border: none;
+  background: #3b5bdb;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin: 4px 4px 4px 0;
+  font-size: 0.85rem;
+}
+button:hover { background: #2f4bc0; }
+
+.controls { margin-bottom: 10px; }
+
+.log-box, section { margin-bottom: 20px; }
+
+#statusLog, #predicted, #actual {
+  background: #111;
+  color: #0f0;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  min-height: 40px;
+  white-space: pre-wrap;
+}

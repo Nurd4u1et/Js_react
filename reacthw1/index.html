@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Async Task Runner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Async Task Runner</h1>
+
+  <section id="tasks"></section>
+
+  <section class="controls">
+    <button id="runAllBtn">Run All Tasks</button>
+    <button id="resetAllBtn">Reset All</button>
+  </section>
+
+  <section class="log-box">
+    <h2>Status log</h2>
+    <div id="statusLog"></div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Sequential vs Concurrent</h2>
+    <button id="seqBtn">Run Sequential (await x3)</button>
+    <button id="concBtn">Run Concurrent (Promise.all)</button>
+    <div id="compareResult"></div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Event Loop Demo</h2>
+    <button id="eventLoopBtn">Run Event Loop Demo</button>
+    <p>Predicted order (edit in script.js, then compare with actual):</p>
+    <pre id="predicted"></pre>
+    <p>Actual order:</p>
+    <pre id="actual"></pre>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
